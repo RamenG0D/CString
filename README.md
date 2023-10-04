@@ -15,7 +15,7 @@ How i would compile (without script)
 
 first clone the project and cd into it
 ```
-git clone PLACE_HOLDER
+git clone https://github.com/drplague1/CString.git
 
 cd CString
 ```
