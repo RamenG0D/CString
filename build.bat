@@ -7,6 +7,14 @@ if "%1"=="" (
   set COMPILER=%~1
 )
 
+set LIB_NAME=CString
+:: for compat with my other build scripts
+if "%1"=="" (
+  set COMPILER=gcc
+) else (
+  set COMPILER=%~1
+)
+
 set LIB_NAME=%~2
 
 echo Compiling %LIB_NAME%
