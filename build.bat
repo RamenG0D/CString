@@ -1,7 +1,13 @@
 @echo off
 
-set COMPILER=%~1
-set LIB_NAME=%~2
+:: for compat with my other build scripts
+if "%1"=="" (
+  set COMPILER=gcc
+) else (
+  set COMPILER=%~1
+)
+
+set LIB_NAME=CString
 
 echo Compiling %LIB_NAME%
 
