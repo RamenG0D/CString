@@ -101,7 +101,7 @@ void StringClear(String* string) {
 void StringSet(String* string, char* str) {
     free(string->str);
     
-    string->str = (char*)malloc(sizeof(str));
+    string->str = (char*)malloc(sizeof(char) * strlen(str));
     string->length = strlen(str);
 
     strcpy_s(string->str, sizeof(string->str), str);
